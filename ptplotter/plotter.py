@@ -10,9 +10,9 @@ from six import string_types
 
 INSTALL_PATH = os.path.dirname(os.path.abspath(__file__))
 
-__all__ = ['ElementDataPlotter', 'plt', 'Square']
-
 elt_data = yaml.safe_load(open(INSTALL_PATH+'/elements.yml').read())
+
+__all__ = ['ElementDataPlotter', 'plt', 'Square', 'elt_data']
 
 def atomic_number(elt):
     """Atomic number (Z)"""
